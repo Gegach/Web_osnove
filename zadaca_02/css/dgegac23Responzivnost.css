@@ -1,0 +1,94 @@
+@media screen and (max-width: 800px) {
+	nav {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	iframe {
+		width: 90%;
+	}
+
+	nav a {
+		margin-bottom: 0.5rem;
+		width: 90%;
+		text-align: center;
+	}
+
+	main {
+		padding: 1rem;
+	}
+
+	#obrazac {
+		width: 95% !important;
+		padding: 1rem;
+	}
+
+	.kartice-projekata {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.kartica {
+		width: 90%;
+	}
+
+	table {
+		display: block;
+		overflow-x: auto;
+		width: 100%;
+	}
+
+	footer {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	footer img {
+		margin: 0.5rem;
+	}
+	.anketa-desno img {
+		width: 100%;
+		height: auto;
+		max-width: 100%;
+	}
+}
+
+@media print {
+	body {
+		background-color: white;
+		color: black;
+		font-size: 12pt;
+	}
+
+	nav,
+	footer,
+	.klizač,
+	.anketa-lijevo,
+	.anketa-desno {
+		display: none;
+	}
+
+	a::after {
+		content: " (" attr(href) ")";
+		font-size: 10pt;
+		color: gray;
+	}
+
+	table {
+		width: 100%;
+		border: 1px solid black;
+	}
+
+	th,
+	td {
+		border: 1px solid black;
+		padding: 0.5rem;
+	}
+
+	.projekt-slika,
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}

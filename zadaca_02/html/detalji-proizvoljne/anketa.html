@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="hr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Dorijan Gegač">
+    <meta name="description" content="Prva zadaća">
+    <meta name="keywords" content="AI, alati, umjetna inteligencija, web, zadaća">
+    <meta name="date" content="10.04.2025">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI alati - Anketa</title>
+    <link rel="stylesheet" href="/dizajn/dgegac23.css" type="text/css">
+    <link rel="stylesheet" href="/dizajn/dgegac23Responzivnost.css" type="text/css">
+    <script src="/JSklijent/dgegac23_obrazac.js"></script>
+    <script src="/JSklijent/dgegac23.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="moj-naslov">Anketa</h1>
+        <a href="/index.html"><img src="/resursi/slike/AI-16-128.png" alt="Logo" height="75"></a>
+    </header>
+
+    <nav>
+        <a href="/index.html">Početna</a>
+        <a href="/dokumentacija.html">Dokumentacija</a>
+        <a href="/oAutoru.html">O autoru</a>
+        <a href="/anketa.html">Anketa</a>
+        <a href="/projekti.html">Projekti</a>
+        <a href="/alati">Alati</a>
+    </nav>
+
+    <main class="anketa">
+        <div class="anketa-lijevo">
+            <p id="anketa-animirani-citat">
+                'If a machine can think, it might think more intelligently than we do, and then where should we be ?'
+            </p>
+            <p id="anketa-animirani-autor">
+                - Alan Turing
+            </p>
+        </div>
+        <section class="obrazac">
+            <h2 class="moj-naslov">Pošalji svoje mišljenje o odabranim AI alatima</h2>
+            <form id="obrazac" action="https://spider.foi.hr/OWT/materijali/ispis_forme.php" method="post" novalidate>
+                <label for="ime">Ime:</label>
+                <input type="text" id="ime" name="ime"><br>
+
+                <label for="prezime">Prezime:</label>
+                <input type="text" id="prezime" name="prezime"><br>
+
+                <label for="broj-tel">Broj telefona:</label>
+                <input type="tel" id="broj-tel" name="broj-tel"><br>
+
+                <label for="email">Email adresa:</label>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="godine">Godine:</label>
+                <input type="number" id="godine" name="godine"><br>
+
+                <label>Spol:</label><br>
+                <input type="radio" id="musko" name="spol" value="muško">
+                <label for="musko">Muško</label><br>
+                <input type="radio" id="zensko" name="spol" value="žensko">
+                <label for="zensko">Žensko</label><br>
+
+                <label for="alat">Najdraži AI alat:</label>
+                <select id="alat" name="alat">
+                    <option value="chatgpt">ChatGPT</option>
+                    <option value="copilot">GitHub Copilot</option>
+                    <option value="deepseek">Deepseek</option>
+                </select><br>
+
+                <label for="iskustvo">Kratko iskustvo s alatom:</label><br>
+                <textarea id="iskustvo" name="iskustvo" rows="4" cols="40"></textarea><br>
+
+                <label for="datum">Datum korištenja:</label>
+                <input type="date" id="datum" name="datum"><br>
+
+                <label for="vrijeme">Vrijeme korištenja:</label>
+                <input type="time" id="vrijeme" name="vrijeme"><br>
+
+                <label for="datoteka">Pošalji sliku ekrana:</label>
+                <input type="file" id="datoteka" name="datoteka"><br>
+
+                <label for="ocjena">Ocjena alata (1–5):</label>
+                <input type="range" id="ocjena" name="ocjena">
+                <span id="ocjena-prikaz">3</span> <br>
+
+                <label>
+                    <input type="checkbox" name="newsletter" value="da"> Želim primati AI novosti
+                </label><br>
+
+                <label for="boja">Omiljena boja sučelja:</label>
+                <input type="color" id="boja" name="boja"><br>
+
+                <label for="lozinka">Unesi lozinku (u testiranju):</label>
+                <input type="password" id="lozinka" name="lozinka"><br>
+
+                <input type="submit" value="Pošalji">
+                <input type="reset" value="Poništi">
+            </form>
+        </section>
+        <div class="anketa-desno">
+            <a href="https://www.forbes.com/sites/louiscolumbus/2018/01/12/10-charts-that-will-change-your-perspective-on-artificial-intelligences-growth/"
+                target="_blank">
+                <img src="/resursi/slike/startups-developing-ai-systems.jpg" alt="graf">
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="podnožje-lijevo">
+            <p>
+                &copy; 2025 Dorijan Gegač
+            </p>
+        </div>
+        <div class="podnožje-desno">
+            <a href="https://chat.openai.com" target="_blank">
+                <img src="/resursi/slike/th.jpg" alt="ChatGPT" height="50" width="50">
+            </a>
+            <a href="https://www.deepseek.com" target="_blank">
+                <img src="/resursi/slike/deepseek-logo.jpg" alt="Deepseek" height="50" width="50">
+            </a>
+            <a href="https://github.com/features/copilot" target="_blank">
+                <img src="/resursi/slike/github-logo.jpg" alt="Github Copilot" height="50" width="50">
+            </a>
+            <a
+                href="http://validator.w3.org/check?uri=https://spider.foi.hr/OWT/2025/zadaca_01/dgegac23/html/anketa.html">
+                <img src="https://spider.foi.hr/OWT/materijali/slike/HTML5.png" alt="HTML5 - validator" height="50">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
